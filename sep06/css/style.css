@@ -1,3 +1,6 @@
 body {
     background-color: hsla(128, 32%, 35%, 0.81);
 }
+h1 {
+    font-size: 35px;    
+}
