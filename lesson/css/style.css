@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+div {
+    /*width: 250px;
+    height: 250px;*/
+    /*background-color: hsl(43, 48%, 47%);
+    border: 1px solid hsl(43, 38%, 47%);*/
+    background-color: hsla(0, 0%, 0%, .5);
+    position: fixed;
+    /*top: calc(50% - calc(250px / 2));
+    left: calc(50% - calc(250px / 2));*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+div::before {
+    content: "test";
+}
+img {
+    position: absolute;
+    top: calc(50% - calc(150px / 2));
+    left: calc(50% - calc(150px / 2));
+    /*border: 50px solid hsl(43, 48%, 47%);*/
+    /*box-shadow: 0 0 0 1px hsl(43, 48%, 57%),
+    0 0 0 51px hsl(43, 48%, 47%),
+    0 0 0 52px hsl(43, 48%, 37%),
+    0 5px 10px 53px hsla(0, 0%, 0%, .45);*/
+}
