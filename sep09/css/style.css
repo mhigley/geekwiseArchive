@@ -1,0 +1,30 @@
+body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+#logo {
+    display: inline-block;
+}
+#logo img {
+    float: left;
+    width: 75px;
+    height: auto;
+}
+#logo h1 {
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+#logo h1,
+#logo p {
+    margin: 0 0 0 75px;
+    line-height: 1;
+}
+#logo p {
+    font-size: 12px;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}

@@ -1,93 +1,48 @@
-html, body {
-    height: 100%;
+body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-h1, h2 {
-    margin: 0;
-}
-ul {
-    margin: 0;
-    list-style: none;
-}
-ul li {
-    display: inline-block;
-}
-
 header {
+    height: 500px;
     background-image: url(../img/background.jpg);
     background-position: center;
     background-size: cover;
-    height: 100%;
     color: white;
 }
 nav {
-    padding: 20px 10px;
+    padding: 40px 10px;
 }
-nav::after {
-    content: '';
-    clear: both;
-    display: block;
+h1, ul {
+    margin: 0;
+    display: inline-block;
 }
 h1 {
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: -3px;
-    float: left;
+    font-size: 50px;
+    letter-spacing: -5px;
 }
 h1 a {
-    color: inherit;
     text-decoration: none;
-}
-h1 img {
-    width: auto;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
+    color: inherit;
 }
 h1 span {
-    color: hsl(190, 82%, 60%);
+    color: hsl(194, 84%, 66%);
 }
 ul {
     float: right;
-    padding: 5px 0;
 }
 ul li {
-    padding: 10px 20px;
-    font-weight: 600;
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-left: 10px;
 }
-ul li.active {
-    background-color: hsl(190, 82%, 60%);
-    border-top-right-radius: 35px 100%;
-    border-bottom-right-radius: 35px 100%;
-    border-top-left-radius: 35px 100%;
-    border-bottom-left-radius: 35px 100%;
+ul li:hover {
+    cursor: pointer;
 }
-div {
-    text-align: center;
-    margin-top: 200px;
-}
-div h2 {
-    font-size: 35px;
-    font-weight: 500;
-}
-div p {
-    margin: 30px auto 50px;
-}
-
-.btn {
-    color: hsla(0, 0%, 9%, 1);
-    text-decoration: none;
-    padding: 10px 30px;
-    border-top-right-radius: 35px 100%;
-    border-bottom-right-radius: 35px 100%;
-    border-top-left-radius: 35px 100%;
-    border-bottom-left-radius: 35px 100%;
-    background-color: white;
-    font-size: 80%;
-}
-.btn.btn-blue {
-    color: white;
-    background-color: hsl(190, 82%, 60%);
+ul li:hover, .active {
+    background-color: hsl(194, 84%, 66%);
+    border-top-right-radius: 20px 50%;
+    border-bottom-right-radius: 20px 50%;
+    border-top-left-radius: 20px 50%;
+    border-bottom-left-radius: 20px 50%;
 }
