@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, ul, ol {
+    margin: 0;
+}
+
+header {
+    background-color: hsl(109, 34%, 67%);
+    padding: 20px;
+}
+nav::after, article::after, section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav {
+    background-color: rgb(158, 79, 79);
+}
+nav img {
+    width: auto;
+    height: 45px;
+}
+nav h1 {
+    float: left;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+}
+article {
+    width: 60%;
+    float: left;
+    background-color: rgb(181, 190, 77);
+}
+article div:nth-of-type(1){
+    width: 60%;
+    float: left;
+}
+article div:nth-of-type(2){
+    width: 40%;
+    float: left;
+}
+article img {
+    width: 100%;
+}
+aside {
+    width: 40%;
+    float: left;
+    background-color: hsl(302, 29%, 53%);
+}
+section:nth-of-type(1){
+    background-color: hsl(211, 26%, 50%);
+}
+section:nth-of-type(2) div{
+    width: calc(100% / 4);
+    display: inline-block;
+    float: left;
+}
+section:nth-of-type(2){
+    background-color: hsl(43, 74%, 58%);
+}
+section:nth-of-type(2) img {
+    width: 100%;
+}

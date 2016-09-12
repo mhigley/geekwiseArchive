@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+}
+header {
+    background-color: hsla(0, 30%, 80%, 1);
+    padding: 20px;
+}
+nav h1 {
+    display: inline-block;
+}
+nav img {
+    width: 65px;
+    height: auto;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+}
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+section article {
+    width: 65%;
+    float: left;
+}
+section article h2 {
+    width: 100%;
+    background-color: hsla(50, 30%, 80%, 1);
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+section article img {
+    width: 45%;
+    height: auto;
+}
+section article div:first-of-type {
+    width: 65%;
+    float: left;
+    background-color: hsla(100, 30%, 80%, 1);
+    padding: 50px 20px;
+    box-sizing: border-box;
+
+}
+section article div:last-of-type {
+    width: 35%;
+    float: right;
+    background-color: hsla(150, 30%, 80%, 1);
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+section aside {
+    width: 35%;
+    float: right;
+    background-color: hsla(200, 30%, 80%, 1);
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+section > div {
+    width: calc(100% / 4);
+    float: left;
+    text-align: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+section > div:nth-of-type(1){
+    background-color: hsla(250, 30%, 80%, 1);
+}
+section > div:nth-of-type(2){
+    background-color: hsla(275, 30%, 80%, 1);
+}
+section > div:nth-of-type(3){
+    background-color: hsla(300, 30%, 80%, 1);
+}
+section > div:nth-of-type(4){
+    background-color: hsla(325, 30%, 80%, 1);
+}
+section > div img {
+    width: 50%;
+    border-radius: 100%;
+}
+
+footer {
+    background-color: hsla(0, 0%, 19%, 1);
+    color: white;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+footer p {
+    margin: 0;
+}
