@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+header {
+    height: 200px;
+    background-color: hsl(0, 45%, 63%);
+}
+aside, article {
+    float: left;
+}
+aside {
+    width: 25%;
+    height: 500px;
+    background-color: cornsilk;
+}
+article {
+    width: 75%;
+    height: 500px;
+    background-color: gold;
+}
+main {
+    background-color: purple;
+}
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+footer {
+    height: 50px;
+    background-color: steelblue;
+}
