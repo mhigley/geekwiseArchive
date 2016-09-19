@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.content {
+    width: 50%;
+    margin: 100px auto;
+}
+section#contact .content {
+    text-align: center;
+}
+address {
+    margin-bottom: 40px;
+}
+address a {
+    display: block;
+    text-decoration: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form div {
+    display: flex;
+}
+form input[type="text"] {
+    margin-right: 10px;
+}
+form input[type="text"],
+form input[type="email"] {
+    flex: 1;
+}
+form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 300px;
+    min-height: 100px;
+    box-sizing: border-box;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    margin-bottom: 10px;
+    background-color: hsl(279, 100%, 95%);
+    color: hsl(279, 100%, 30%);
+    padding: 5px;
+    border: none;
+}
+form input[type="submit"]{
+    align-self: flex-end;
+    border: none;
+    padding: 10px 15px;
+    background-color: hsl(279, 100%, 30%);
+    color: white;
+}
