@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
+}
+header {
+    background-image: url(../img/slide-1.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 10vw;
+
+}
+
+nav h1 {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav h1 a {
+    display: inline-block;
+    width: 122px;
+    height: 100%;
+    opacity: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+nav li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -200%;
+    left: 0;
+    background-image: linear-gradient(
+        hsla(189, 69%, 49%, .75),
+        hsla(189, 69%, 49%, 0),
+        hsla(0, 0%, 100%, .75)
+    );
+    transition: top 400ms ease-in-out;
+}
+nav li:hover::after {
+    top: 100%;
+}
+
+nav li span {
+    flex: none;
+    height: 100%;
+    display: flex;
+    transform: translateY(-100%);
+    transition: all 600ms ease-in-out;
+}
+nav li span:first-child {
+    background-color: hsla(189, 69%, 49%, 0);
+    transition: background-color 400ms ease-in-out;
+}
+nav li span:last-child {
+    background-color: hsla(0, 0%, 100%, 0);
+    transition: background-color 400ms ease-in-out;
+}
+nav li:hover span {
+    transform: translateY(0%);
+}
+nav li:hover span:first-child {
+    background-color: hsla(189, 69%, 49%, 1);
+}
+nav li:hover span:last-child {
+    background-color: hsla(0, 0%, 100%, 1);
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+}
+
+
+
+
+
+
+
+
+
+#cta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+#cta h2 {
+    font-weight: 500;
+    font-size: 16vw;
+    text-transform: uppercase;
+    line-height: .9;
+}
+#cta p {
+    width: 80%;
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: 28px;
+    line-height: 1.25;
+}
+#cta a {
+    font-weight: 500;
+    margin-left: 15px;
+    padding: 30px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: hsl(189, 69%, 49%);
+    color: inherit;
+    transition: all 300ms ease-in-out;
+}
+#cta a:hover {
+    background-color: hsl(189, 68%, 100%);
+    color: black;
+}

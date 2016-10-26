@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-size: 16px;
+}
+/*
+ul {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul li {
+    width: calc(100vw / 4);
+    display: inline-block;
+    background-color: hsl(122, 27%, 53%);
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div {
+    width: 50vw;
+    height: 100vh;
+    float: left;
+    background-image: url(http://unsplash.it/800/800?image=699);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div img {
+    position: relative;
+    left: -50%;
+    top: -50%;
+}
+h1 {
+    margin: 0;
+    font-size: 7.2vw;
+}
+p {
+    -moz-column-width: 200px;
+    column-width: 200px;
+}
+*/
+#cta {
+    height: 100vh;
+    background-color: yellow;
+    border: 10px solid black;
+    box-sizing: border-box;
+    display: flex;
+}
+#cta h1 {
+    font-size: 8vw;
+    margin: auto;
+}
+section {
+    /*padding: 50px 10vw;*/
+    -moz-column-width: 250px;
+    column-width: 250px;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+}
+section p {
+    margin-top: 0;
+}
+#img1 {
+    float: left;
+}
+#img2 {
+    float: right;
+}
+section img {
+    border-radius: 100%;
+    margin: 10px;
+
+
+
+
+
+
+    shape-outside: circle();
+}

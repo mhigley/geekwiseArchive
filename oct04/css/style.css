@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+h1 {
+    margin: 0;
+    font-size: 5vw;
+}
+img {
+    width: 50vw;
+    height: 100vh;
+    margin-right: 20px;
+    float: left;
+}
+p {
+    -webkit-column-width: 250px; /* Chrome, Safari, Opera */
+    -moz-column-width: 250px; /* Firefox */
+    column-width: 250px;
+}

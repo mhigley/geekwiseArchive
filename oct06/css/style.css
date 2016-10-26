@@ -1,0 +1,136 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/home-slider-1-slide-2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    color: white;
+}
+
+/*
+    NAV
+*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1 {
+    background-image: url(../img/logo-229x39.png);
+    background-repeat: no-repeat;
+
+}
+nav h1 a {
+    width: 229px;
+    height: 39px;
+    display: block;
+    color: transparent;
+}
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 125%;
+}
+nav ul ul {
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    background-color: hsla(0, 0%, 0%, .8);
+    font-size: 100%;
+}
+nav ul ul a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+}
+nav > ul > li {
+    position: relative;
+}
+nav > ul > li:hover ul {
+    display: block;
+}
+nav > ul > li::after {
+    content: '/';
+    display: inline-block;
+    margin: 0 10px;
+}
+nav > ul > li:last-child::after {
+    content: none;
+}
+nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+    CAR TITLE
+*/
+header h2 {
+    margin: auto;
+    font-size: 15vw;
+}
+
+/*
+    SECTION GALLERY
+*/
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+#gallery > div {
+    width: calc(100% / 4);
+    height: 28vw;
+    overflow: hidden;
+    position: relative;
+}
+#gallery small {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 0 20px;
+    opacity: 1;
+    transition: all 250ms ease-out;
+}
+#gallery > div > img {
+    width: 100%;
+    transform: scale(1.25);
+}
+#gallery > div:hover div {
+    border-radius: 0%;
+    transform: scale(1);
+    opacity: 1;
+}
+#gallery > div:hover small {
+    opacity: 0;
+}
+#gallery > div div {
+    transition: all 250ms ease-out;
+    border-radius: 25%;
+    transform: scale(.75);
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsla(198, 100%, 58%, .8);
+}

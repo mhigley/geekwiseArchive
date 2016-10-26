@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas:
+        'aside . head head head . .'
+        'aside . . main main . .'
+        'aside . . main main . .'
+        'aside foot foot foot foot foot foot';
+    grid-gap: 10px;
+}
+.a {
+    grid-area: head;
+    background-color: hsl(41, 64%, 58%);
+    /*grid-column: span 2;*/
+}
+.b {
+    grid-area: aside;
+    background-color: hsl(292, 35%, 57%);
+    /*grid-column: 1 / span 3;
+    grid-row: 2 / span 3;*/
+    grid: 2 / 1 / span 3 / span 3;
+}
+.c {
+    grid-area: main;
+    background-color: hsl(242, 69%, 59%);
+    /*grid-column: 2;
+    grid-row: 3;*/
+    align-self: stretch;
+    justify-self: stretch;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.d {
+    grid-area: foot;
+    background-color: hsl(157, 72%, 75%);
+    /*grid-column: 1;
+    grid-row: 1;*/
+}

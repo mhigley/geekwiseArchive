@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+@import 'https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+section#models {
+    background-image: url(../img/bg-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15vw 5vw 15vw 50%;
+}
+h2 {
+    text-transform: uppercase;
+}
+h2 + hr {
+    height: 0;
+    width: 12vw;
+    border: 3px solid hsl(198, 100%, 58%);
+}
+hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: hsl(0, 0%, 90%);
+}
+section#models ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+section#models p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+/*section#models span {
+    margin-left: auto;
+}*/
+progress {
+    width: 100%;
+    border: none;
+    height: 8px;
+}
+
+progress::-moz-progress-bar {
+    background-color: hsl(198, 100%, 58%);
+}
+section#models a {
+    color: hsl(198, 100%, 58%);
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+    display: flex;
+    align-items: center;
+}
+section#models a:hover {
+    color: black;
+}
+section#models i {
+    margin-left: 10px;
+    transition: all 250ms ease-in-out;
+}
+section#models a:hover i {
+    margin-left: 15px;
+}

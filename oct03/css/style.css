@@ -1,0 +1,37 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 2vw;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightslategrey;
+}
+nav a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+#cta {
+  background-image: url(http://unsplash.it/1000/300?image=700);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+}
+#cta h1 {
+  font-size: 13.7vw;
+  margin: auto;
+  color: white;
+}
+footer {
+  display: flex;
+}
+footer p {
+  margin: 0 auto 0 0;
+}

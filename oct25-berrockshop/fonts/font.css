@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Brush Script Std';
+  src: url('BrushScriptStd.eot'); /* IE9 Compat Modes */
+  src: url('BrushScriptStd.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('BrushScriptStd.woff') format('woff'), /* Modern Browsers */
+       url('BrushScriptStd.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('BrushScriptStd.svg#eb21f6604ba28d5573abad1c01255830') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Fraktur BT';
+  src: url('Fraktur-BT-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Fraktur-BT-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Fraktur-BT-Regular.woff') format('woff'), /* Modern Browsers */
+       url('Fraktur-BT-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Fraktur-BT-Regular.svg#f78369fb7f540f355d128fc492e4218d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

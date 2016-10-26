@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vw;
+}
+header {
+    background-image: url(../img/slide-1.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 10vw;
+
+}
+
+nav h1 {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav h1 a {
+    display: inline-block;
+    width: 122px;
+    height: 100%;
+    opacity: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+nav li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -200%;
+    left: 0;
+    background-image: linear-gradient(
+        hsla(189, 69%, 49%, .75),
+        hsla(189, 69%, 49%, 0),
+        hsla(0, 0%, 100%, .75)
+    );
+    transition: top 400ms ease-in-out;
+}
+nav li:hover::after {
+    top: 100%;
+}
+
+nav li span {
+    flex: none;
+    height: 100%;
+    display: flex;
+    transform: translateY(-100%);
+    transition: all 600ms ease-in-out;
+}
+nav li span:first-child {
+    background-color: hsla(189, 69%, 49%, 0);
+    transition: all 400ms ease-in-out;
+}
+nav li span:last-child {
+    background-color: hsla(0, 0%, 100%, 0);
+    transition: all 400ms ease-in-out;
+}
+nav li:hover span {
+    transform: translateY(0%);
+}
+nav li:hover span:first-child {
+    background-color: hsla(189, 69%, 49%, 1);
+}
+nav li:hover span:last-child {
+    background-color: hsla(0, 0%, 100%, 1);
+}
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+}
+
+
+
+
+
+
+
+
+
+#cta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+#cta h2 {
+    font-weight: 500;
+    font-size: 16vw;
+    text-transform: uppercase;
+    line-height: .9;
+}
+#cta p {
+    width: 80%;
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: 28px;
+    line-height: 1.25;
+}
+#cta a {
+    font-weight: 500;
+    margin-left: 15px;
+    padding: 30px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: hsl(189, 69%, 49%);
+    color: inherit;
+    transition: all 300ms ease-in-out;
+}
+#cta a:hover {
+    background-color: hsl(189, 68%, 100%);
+    color: black;
+}
+
+
+#benefits {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10vw 5vw;
+    box-sizing: border-box;
+    justify-content: center;
+}
+#benefits div {
+    box-sizing: border-box;
+    width: calc(100% / 3 - 2vw);
+    background-color: hsl(189, 69%, 49%);
+    color: white;
+    margin-right: 2vw;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color 400ms ease-in-out;
+}
+
+#benefits div:hover {
+    background-color: hsl(189, 0%, 9%);
+}
+#benefits div:last-child {
+    margin-right: 0;
+}
+#benefits img {
+    width: 118px;
+    height: auto;
+    margin-bottom: 15px;
+    align-self: center;
+}
+#benefits h3 {
+    font-size: 5vw;
+    margin-bottom: 15px;
+}
+#benefits h3 + p {
+    font-size: 150%;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+#benefits p {
+    margin: 0 0 50px;
+}
+@media screen and (max-width: 768px){
+    #benefits div {
+        width: calc(100% / 2 - 1vw);
+        margin-bottom: 50px;
+    }
+    #benefits div:nth-child(odd) {
+        margin-right: 2vw;
+    }
+    #benefits div:nth-child(even),
+    #benefits div:last-child {
+        margin-right: 0;
+    }
+}
+
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+#gallery > div {
+    width: calc(100% / 3);
+    position: relative;
+    overflow: hidden;
+}
+#gallery img {
+    width: 100%;
+    float: left;
+    transition: transform 400ms ease-in-out;
+}
+#gallery div div {
+    padding: 15px;
+    position: absolute;
+    top: 5vw;
+    right: 2.5vw;
+    bottom: 5vw;
+    left: 2.5vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease-in-out;
+}
+#gallery h3 {
+    font-size: 100%;
+}
+#gallery p {
+    font-size: 80%;
+}
+#gallery > div:hover img {
+    transform: scale(1.25);
+}
+#gallery > div:hover div {
+    color: white;
+    background-color: hsl(0, 0%, 9%);
+}
+
+
+
+
+
+
+
+
+
+
+a.slide-btn {
+    display: block;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 0;
+    margin-top: auto;
+    transition: color 400ms ease-in-out;
+}
+a.slide-btn::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: height 400ms ease-in-out;
+}
+a.slide-btn.white2blue,
+a.slide-btn.white2black {
+    background-color: white;
+    color: hsl(0, 0%, 9%);
+}
+a.slide-btn.blue2white {
+    background-color: hsl(189, 69%, 49%);
+    color: white;
+}
+
+a.slide-btn.white2blue::before {background-color: hsl(189, 69%, 49%);}
+a.slide-btn.white2black::before {background-color: hsl(0, 0%, 9%);}
+a.slide-btn.blue2white::before {background-color: white;}
+
+a.slide-btn:hover::before {height: 100%;}
+a.slide-btn.white2blue:hover,
+a.slide-btn.white2black:hover {color: white;}
+a.slide-btn.blue2white:hover {color: hsl(0, 0%, 9%);}
+
+
+
+@media screen and (max-width: 768px){
+    #gallery > div {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 544px){
+    #gallery > div {
+        width: 100%;
+    }
+    #gallery div div {
+        top: 20vw;
+        right: 15vw;
+        bottom: 20vw;
+        left: 15vw;
+    }
+    #gallery > div:hover img {
+        transform: none;
+    }
+    #gallery > div:hover div {
+        color: hsl(0, 0%, 9%);
+        background-color: white;
+    }
+}
