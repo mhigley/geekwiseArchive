@@ -1,0 +1,46 @@
+@media screen and (max-width: 774px){
+    body {
+        border: none;
+        margin: 0;
+    }
+    hr {
+        display: none;
+    }
+    body > header, main {
+        border: none;
+    }
+    body > header {
+        background-image: url(../img/berrockbanner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    body > header > h1 {
+        margin: 10px auto;
+        background-color: hsla(60, 100%, 97%, .85);
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 3px 20px 22px;
+    }
+    header div {
+        display: none;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        display: inline-flex;
+        flex-direction: column;
+        border-width: 1px;
+        padding: 0 10vw;
+    }
+    nav li {
+        line-height: 2;
+        text-align: center;
+    }
+    section, aside {
+        width: 100%;
+        padding: 0 25px 20px;
+    }
+
+}
