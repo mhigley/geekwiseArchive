@@ -1,0 +1,67 @@
+html {
+    background-image: url(../img/headbg.jpg), url(../img/bobybg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat, repeat-x;
+    background-color: black;
+}
+body {
+    color: white;
+    margin: 0;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+header {
+
+}
+section {
+    width: 64%;
+    float: left;
+    background-image: url(../img/leftbg.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+aside {
+    width: 34%;
+    float: right;
+    background-image: url(../img/rightbg.png), url(../img/mainbg.jpg);
+    background-position: left top;
+    background-repeat: no-repeat, repeat-x;
+}
+footer {
+    background-color: hsl(9, 83%, 9%);
+}
+
+main::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body > :first-child {
+    position: relative;
+    /*background-image: url(../img/pictop.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;*/
+}
+body > :first-child .pump {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+footer {
+
+}
+footer .container {
+    padding: 50px 0;
+    position: relative;
+    /*background-image: url(../img/picbottom.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;*/
+}
+footer .container .pump {
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
