@@ -18,9 +18,13 @@ header {
 section {
     width: 64%;
     float: left;
-    background-image: url(../img/leftbg.jpg);
+    background-image: url(../img/leftbg.jpg), url(../img/mainbg.jpg);
     background-position: right top;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat-x;
+}
+section img {
+    float: left;
+    margin: 0 20px 20px 0;
 }
 aside {
     width: 34%;
@@ -29,39 +33,58 @@ aside {
     background-position: left top;
     background-repeat: no-repeat, repeat-x;
 }
-footer {
+#mega {
     background-color: hsl(9, 83%, 9%);
 }
-
+#mega .container {
+    padding: 40px 0;
+    display: flex;
+}
+#mega .container > div {
+    flex: 1;
+    margin: 0 20px;
+}
 main::after {
     content: '';
     display: block;
     clear: both;
 }
 
-body > :first-child {
+body > :first-child,
+#mega .container {
     position: relative;
-    /*background-image: url(../img/pictop.jpg);
-    background-repeat: no-repeat;
-    background-position: right bottom;*/
 }
 body > :first-child .pump {
     position: absolute;
     bottom: 0;
     right: 0;
 }
-footer {
-
-}
-footer .container {
-    padding: 50px 0;
-    position: relative;
-    /*background-image: url(../img/picbottom.jpg);
-    background-repeat: no-repeat;
-    background-position: right top;*/
-}
-footer .container .pump {
+#mega .pump {
     position: absolute;
     top: 0;
     right: -12px;
+}
+@media screen and (max-width: 799px){
+    .container {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+        background-image: url(../img/mainbg.jpg);
+        background-repeat: repeat-x;
+        padding-bottom: 60px;
+    }
+    aside {
+        display: none;
+    }
+    #mega .container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px){
+    section img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
 }

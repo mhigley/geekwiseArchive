@@ -1,0 +1,64 @@
+/*
+    key color: hsl(348, 95%, 56%);
+    hover color: hsl(48, 90%, 59%);
+*/
+
+body {
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 90%);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a.btn {
+    display: inline-block;
+    padding: 12px 20px 10px;
+    background-color: hsl(348, 95%, 56%);
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+a.btn:hover {
+    color: hsl(48, 90%, 59%);
+}
+section {
+    text-align: center;
+}
+section > ul {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+section > ul > li {
+    flex: 1;
+    background-color: hsl(0, 0%, 85%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 150ms ease-out;
+
+    /*width: calc(100% / 3);*/
+}
+section > ul > li:hover {
+    transform: scale(1.05);
+}
+section > ul > li:nth-child(2):hover {
+    transform: scale(1.25);
+}
+section > ul > li a {
+    margin-top: auto;
+}
+section > ul > li:nth-child(2){
+    background-color: hsl(348, 95%, 56%);
+    color: white;
+    transform: scale(1.15);
+    position: relative;
+    z-index: 1;
+}
