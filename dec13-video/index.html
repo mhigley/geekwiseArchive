@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="video">
+        <video autoplay>
+            <source src="media/trailer_iphone.m4v">
+        </video>
+    </div>
+    <div id="content" style="display: none;">
+        <h1>Hidden Content</h1>
+    </div>
+
+    <script>
+        var vidWrap = document.getElementById('video');
+        var contentWrap = document.getElementById('content');
+        var vid = document.getElementsByTagName('video')[0];
+
+        vid.addEventListener('ended', myHandler, false);
+
+        function myHandler(e){
+            vidWrap.style.display = 'none';
+            contentWrap.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
