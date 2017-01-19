@@ -1,0 +1,37 @@
+$key-color: slategray;
+$secondary-color: lavender;
+$tertiary-color: lime;
+
+// headline styles
+
+// size variable
+// font variable
+// color variable
+
+// button styles
+// $btn-color: hsl(0, 100%, 50%);
+// $color-2: lighten( invert( adjust-hue($btn-color, 50deg) ), 20% );
+// $btn-lite: invert( $btn-color );
+// $btn-dark: complement( $btn-color );
+// $btn-lite: hsl(300, 45%, 70%);
+// $btn-dark: hsl(300, 45%, 30%);
+
+// COLOR FUNCTIONS
+/*
+    lighten( 2 arguments );
+    darken( 2 arguments );
+    invert( 1 argument );
+    complement( 1 argument );
+    adjust-hue( 2 arguments )
+*/
+
+$base: hsl(0, 100%, 50%);
+$secondary: adjust-hue( $base, 40deg );
+$tertiary: adjust-hue( $base, 60deg );
+$quaternary: adjust-hue( $base, 90deg );
+$quinary: adjust-hue( $base, 200deg );
+$senary: adjust-hue( $base, 290deg );
+
+$colors: $base $secondary $tertiary $quaternary $quinary $senary;
+// $colors = [$base, $secondary, ...];
+$i: 1;

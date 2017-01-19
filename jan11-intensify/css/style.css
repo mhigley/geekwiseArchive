@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,600|Pacifico');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: hsl(212, 6%, 49%);
+}
+
+.btn {
+    border: solid 1px lightgray;
+    background-color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    color: inherit;
+    text-decoration: none;
+}
+.btn-cta {
+    background-color: hsl(9, 89%, 67%);
+    border: none;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-family: Pacifico, cursive;
+    color: hsl(9, 89%, 67%);
+    font-size: 2.5em;
+    font-weight: normal;
+}
+h2, h3, h4, h5, h6 {font-family: Montserrat, sans-serif;}
+h2 {color: hsl(193, 68%, 45%);}
+h3 {font-size: 1.75em;}
+
+.col-white h3,
+.col-white h4 {color: hsl(193, 68%, 45%);}
+.col-orange,
+.col-blue {color: white;}
+.col-orange {background-color: hsl(9, 89%, 67%);}
+.col-blue {background-color: hsl(193, 68%, 45%);}
+.col-blue i {color: hsl(9, 89%, 67%);}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+cite {
+    display: block;
+    font-style:  normal;
+}
+cite.author {
+    font-weight: 600;
+    margin-top: 40px;
+}
+cite.company {font-size: 80%;}
+section,
+#footer {padding: 75px 10vw 100px;}
+/*
+    Section specific styles
+    -----------------------
+    NAV
+*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, .1);
+}
+nav div {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    transition: all 250ms ease-out;
+    background-color: hsl(193, 68%, 45%);
+}
+nav div.open {left: 0px;}
+nav div i {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+    color: hsla(0, 0%, 100%, .5);
+    transition: color 250ms ease-out;
+}
+nav div i:hover {
+
+    color: hsla(0, 0%, 100%, 1);}
+nav ul {padding: 20px;}
+nav ul:hover {left: 0;}
+nav li {border-bottom: 1px solid hsla(0, 0%, 100%, .25);}
+nav li:last-child {border: none;}
+nav a {
+    display: inline-block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: white;
+}
+nav i.fa {
+    cursor: pointer;
+    font-size: 2em;
+    color: hsla(0, 0%, 0%, .2);
+}
+nav div i.fa {
+    font-size: 1em;
+}
+/*
+    Section specific styles
+    -----------------------
+    #HERO
+*/
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0 100px;
+}
+#hero div {width: 75%;}
+#hero .btn {display: inline-block;}
+
+
+/*
+    Section specific styles
+    -----------------------
+    FEATURES
+*/
+#features {
+    display: flex;
+    justify-content: space-between;
+}
+#features ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+}
+#features ul:nth-of-type(odd){text-align: right;}
+#features img {
+    width: 30%;
+    height: 100%;
+    flex: none;
+    border-radius: 100%;
+    border: 20px solid transparent;
+}
+/*
+    Section specific styles
+    -----------------------
+    TESTIMONIALS
+*/
+#testimonials {text-align: center;}
+#testimonials p {font-style: italic;}
+#testimonials p::before {
+    content: open-quote;
+    font-family: sans-serif;
+}
+
+#testimonials p::after {
+    content: close-quote;
+    font-family: sans-serif;
+}
+/*
+    Section specific styles
+    -----------------------
+    GALLERY
+*/
+#gallery ul {
+    display: flex;
+    justify-content: space-between;
+}
+#gallery li {
+    width: 30%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    overflow: hidden;
+}
+#gallery img {width: 100%;}
+#gallery div {padding: 20px 20px 5px;}
+#gallery h4 {margin-top: 0;}
+/*
+    Section specific styles
+    -----------------------
+    FOOTER
+*/
+#footer {text-align: center;}
+#footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+#footer hr {
+    width: 50%;
+    height: 0px;
+    border-width: 1px 0 0 0;
+    border-color: hsla(0, 0%, 100%, .35);
+    border-style: solid;
+}
+
+
+@media screen and (max-width: 768px){
+    nav::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+    }
+    nav div {
+        width: 100%;
+        height: auto;
+        top: -100%;
+        left: 0;
+        z-index: -1;
+    }
+    nav div.open {top: 100%;}
+    /*
+        Section specific styles
+        -----------------------
+        FEATURES
+    */
+    #features {flex-direction: column;}
+    #features img {display: none;}
+    #features ul {width: 100%;}
+    #features ul {text-align: left !important;}
+    #features li {
+        border-bottom: 1px solid hsla(0, 0%, 0%, .25);
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+    #features ul:last-child li:last-child {border: none;}
+    /*
+    #features ul li:nth-child(even) {
+        text-align: left !important;
+    }
+    #features ul li:nth-child(odd) {
+        text-align: right !important;
+    }
+    */
+    /*
+        Section specific styles
+        -----------------------
+        GALLERY
+    */
+    #gallery ul {flex-direction: column;}
+    #gallery li {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    /*
+        Section specific styles
+        -----------------------
+        FOOTER
+    */
+    #footer ul {flex-direction: column;}
+    #footer hr {width: 100%;}
+}

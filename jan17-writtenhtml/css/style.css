@@ -1,0 +1,103 @@
+body {
+    padding: 25px 10vw;
+    margin: 0;
+}
+section {
+    display: flex;
+}
+h1 {
+    margin: 10px 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid lightgray;
+}
+li img {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+header {
+    display: flex;
+    padding: 10px 0;
+}
+form {
+    display: flex;
+    width: 100%;
+}
+input[type="text"]{
+    flex: 1;
+    height: 30px;
+    padding: 2px 10px;
+    font-size: 1em;
+    border: 1px solid lightgray;
+}
+input[type="submit"]{
+    flex: none;
+    width: 150px;
+    margin-left: 10px;
+    background-color: hsla(10, 95%, 35%, 1);
+    color: white;
+    border: 1px solid hsla(10, 95%, 35%, 1);
+    padding: 2px 10px;
+    font-size: 1em;
+}
+#video {
+    margin-bottom: 50px;
+}
+section > div {
+    width: 70%;
+}
+section aside {
+    width: 30%;
+}
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+li:last-child {
+    border: none;
+}
+aside ul {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        padding: 10px 5vw;
+    }
+    form {
+        flex-direction: column;
+    }
+    input[type="text"], input[type="submit"] {
+        box-sizing: border-box;
+        flex: none;
+        height: 45px;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    section {
+        flex-direction: column;
+    }
+    section > div {
+        width: 100%;
+    }
+    section aside {
+        width: 100%;
+    }
+    section > div ul {
+        display: none;
+    }
+    aside ul {
+        margin: 0;
+    }
+}

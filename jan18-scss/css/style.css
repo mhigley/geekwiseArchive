@@ -1,0 +1,37 @@
+/*
+    lighten( 2 arguments );
+    darken( 2 arguments );
+    invert( 1 argument );
+    complement( 1 argument );
+    adjust-hue( 2 arguments )
+*/
+ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  ul li {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 25px 0;
+    text-align: center; }
+    ul li:nth-child(1) {
+      background-color: red; }
+    ul li:nth-child(2) {
+      background-color: #ffaa00; }
+    ul li:nth-child(3) {
+      background-color: yellow; }
+    ul li:nth-child(4) {
+      background-color: #80ff00; }
+    ul li:nth-child(5) {
+      background-color: #00aaff; }
+    ul li:nth-child(6) {
+      background-color: #d500ff; }
+
+div {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 25px; }

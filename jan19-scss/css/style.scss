@@ -1,0 +1,78 @@
+@import '_colors';
+
+html {
+    min-height: 100%;
+}
+body {
+    padding-top: 150px;
+    background-color: black;
+    color: $primary;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    width: 100%;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 150px;
+    align-self: flex-start;
+    display: flex;
+    li {
+        flex: 1;
+        position: relative;
+        border-right: 1px solid white;
+    }
+    @for $i from 1 through 360 {
+        li:nth-child( #{ $i } ){
+            background-color: hsl($i, 100%, 50%);
+            top: #{$i}px;
+            // left: #{ $i * 2 }px;
+        }
+    }
+}
+
+
+/*
+    the above code is for the body
+*/
+
+div {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    box-sizing: border-box;
+    a {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        color: $primary;
+        text-decoration: none;
+        border: 1px solid $primary;
+        $i: 1;
+        @each $color in $baseArray {
+            &:nth-child( #{ $i } ){
+                background-color: transparentize($color, .5);
+            }
+            $i: $i + 1;
+        }
+    }
+    a:nth-child(1){
+        transform: translate3d(-33%, -33%, 0);
+    }
+    a:nth-child(2){
+        transform: translate3d(33%, -33%, 0);
+    }
+    a:nth-child(3){
+        transform: translate3d(0, 33%, 0);
+    }
+}

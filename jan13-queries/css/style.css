@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+nav {
+    background-color: #ddd;
+    padding: 20px;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+main {
+    padding: 100px 10vw;
+
+}
+div {
+    text-align: center;
+}
+img {
+    width: 35%;
+    position: relative;
+}
+footer {
+    background-color: #303030;
+    color: white;
+    padding: 20px;
+}
+
+
+
+/*
+main {
+    display: flex;
+    align-items: flex-start;
+}
+h1 {
+    font-family: sans-serif;
+    color: hsl(197.1, 11.1%, 49.4%);
+    font-weight: normal;
+    font-size: 3em;
+    margin: 0;
+}
+div {
+    flex: none;
+    margin: 0 auto;
+    text-align: none;
+}
+div:first-child {
+    flex: none;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 10px solid hsl(197, 11%, 49%);
+    overflow: hidden;
+}
+div:last-child {
+    flex: 1;
+    padding-left: 35px;
+}
+img {
+    width: 100%;
+    left: -25px;
+    top: -50px;
+}
+*/
+
+
+
+@media print {
+    nav, footer {
+        display: none;
+    }
+    main {
+        display: flex;
+        align-items: flex-start;
+    }
+    h1 {
+        font-family: sans-serif;
+        color: hsl(197.1, 11.1%, 49.4%);
+        font-weight: normal;
+        font-size: 3em;
+        margin: 0;
+    }
+    div {
+        flex: none;
+        margin: 0 auto;
+        text-align: none;
+    }
+    div:first-child {
+        flex: none;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        border: 10px solid hsl(197.1, 11.1%, 49.4%);
+        overflow: hidden;
+    }
+    div:last-child {
+        flex: 1;
+        padding-left: 35px;
+    }
+    img {
+        width: 100%;
+        left: -25px;
+        top: -50px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    body {
+        background-color: pink;
+    }
+}
+
+@media screen and (max-width: 992px){
+    body {
+        background-color: skyblue;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body {
+        background-color: lavender;
+    }
+}
+@media screen and (max-width: 500px){
+    body {
+        background-color: green;
+    }
+}

@@ -1,0 +1,27 @@
+@import 'variables';
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        flex: 1;
+        padding: 25px 0;
+        text-align: center;
+
+        @each $color in $colors {
+            &:nth-child(#{ $i }){
+                background-color: $color;
+            }
+            $i: $i + 1;
+        }
+
+    }
+}
+
+div {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 25px;
+}
