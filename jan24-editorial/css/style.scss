@@ -1,0 +1,81 @@
+@import 'imports';
+
+body {
+    margin: 0;
+    color: $text-color;
+}
+main {
+    display: flex;
+}
+aside {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    background-color: $sidebar;
+    form {
+        background-color: $sidebar-search;
+    }
+}
+section {
+    border-bottom: 2px solid $theme-gray;
+}
+a {
+    text-decoration: none;
+
+}
+h1, h2, h3, h4, h5, h6, .btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $hdr-color;
+}
+h3 {
+    display: inline-block;
+    padding-bottom: 4px;
+    padding-right: 16px;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+}
+form, ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+
+
+.theme-blue {
+    .btn, button i.fa {
+        color: $theme-blue;
+    }
+    h3,
+    .btn {
+        border-color: $theme-blue;
+    }
+}
+
+
+// USER CUSTOMIZATION
+#util {
+    position: absolute;
+    top: 16px;
+    left: calc(100% + 16px);
+}
+button i[class*="circle"]{
+    &[class$="red"]{
+        color: $theme-red;
+    }
+    &[class$="green"]{
+        color: $theme-green;
+    }
+    &[class$="blue"]{
+        color: $theme-blue;
+    }
+}

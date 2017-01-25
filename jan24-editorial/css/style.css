@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab:100,300,400,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body { margin: 0; color: #7f888f; }
+
+main { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+aside { position: relative; width: 400px; padding: 20px; background-color: #f5f6f7; }
+
+aside form { background-color: #eff1f2; }
+
+section { border-bottom: 2px solid rgba(210, 215, 217, 0.8); }
+
+a { text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, .btn { font-family: 'Roboto Slab', serif; font-weight: 700; }
+
+h1, h2, h3, h4, h5, h6 { color: #3d4449; }
+
+h3 { display: inline-block; padding-bottom: 4px; padding-right: 16px; border-width: 0 0 3px 0; border-style: solid; }
+
+form, ul, ol { padding: 0; margin: 0; list-style: none; }
+
+.btn { display: inline-block; text-transform: uppercase; }
+
+.theme-blue .btn, .theme-blue button i.fa { color: #62d4e5; }
+
+.theme-blue h3, .theme-blue .btn { border-color: #62d4e5; }
+
+#util { position: absolute; top: 16px; left: calc(100% + 16px); }
+
+button i[class*="circle"][class$="red"] { color: #f56a6a; }
+
+button i[class*="circle"][class$="green"] { color: #6cc5af; }
+
+button i[class*="circle"][class$="blue"] { color: #62d4e5; }

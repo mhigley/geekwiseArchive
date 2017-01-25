@@ -1,0 +1,14 @@
+// Placeholder Selector
+/*
+    block
+    of
+    comments
+*/
+%border-style {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    @extend %background;
+}
+%background {
+    background-color: purple;
+}

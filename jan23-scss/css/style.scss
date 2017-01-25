@@ -1,0 +1,42 @@
+@import 'imports';
+
+body {
+    font-family: sans-serif;
+}
+h1 {
+    color: $primary-color;
+    @extend %border-style;
+}
+h2 {
+    font-family: Raleway;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.btn {
+    display: inline-block;
+    background-color: pink;
+    padding: 10px;
+    // @extend %border-style;
+    @include border-style(violet);
+}
+.btn:hover {
+    text-decoration: none;
+}
+a.btn:last-of-type {
+    @include border-style(purple);
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul:first-of-type li {
+    @include el-calc(5, green);
+}
+ul:nth-of-type(2) li {
+    @include el-calc(7, orange);
+}

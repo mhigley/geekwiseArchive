@@ -1,0 +1,22 @@
+$theme-red: hsl(0, 87.4%, 68.8%);
+$theme-green: hsl(165.2, 43.4%, 59.8%);
+$theme-blue: hsl(187.8, 71.6%, 64.1%);
+$theme-gray: hsla(197.1, 8.4%, 83.7%, 0.8);
+
+$sidebar: hsl(210, 11.1%, 96.5%);
+$sidebar-search: hsl(200, 10.3%, 94.3%);
+
+$text-color: hsl(206.3, 6.7%, 52.9%);
+$hdr-color: hsl(205, 9%, 26.3%);
+
+
+$rhythm: 16px;
+$rbr: calc(#{$rhythm} / 3);
+$rlh: calc(#{$rhythm} / 2 * 3);
+$rp: $rhythm;
+$rmb: $rhythm * 2;
+
+$h1: $rhythm;
+$h2: 3em;
+$h3: 2.5em;
+$h4: 2em; 
