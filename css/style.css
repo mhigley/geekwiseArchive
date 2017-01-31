@@ -92,8 +92,7 @@ header {
     font-size: 1rem;
     background-color: hsla(0, 0%, 0%, .85);
     color: white;
-    padding: 4px;
-    /*flex: none;*/
+    padding: 0 16px;
 }
 header h1 {
     font-size: inherit;
@@ -103,15 +102,24 @@ header ul {
     display: flex;
 }
 header li {
-    margin: 0 8px;
+    display: flex;
 }
 header li:first-child {
     font-weight: 100;
 }
+header a {
+    padding: 4px 8px;
+    text-decoration: none;
+    color: inherit;
+}
+header a:hover {
+    background-color: hsl(210, 81%, 61%);
+}
+
 
 
 figure {
-    width: 150px;
+    width: 100px;
     margin: 0;
     text-align: center;
     color: white;
@@ -119,8 +127,8 @@ figure {
     margin-bottom: 2rem;
 }
 main img {
-    width: 85px;
-    margin-bottom: 1rem;
+    width: 65px;
+    margin-bottom: 8px;
 }
 main a {
     text-decoration: none;
