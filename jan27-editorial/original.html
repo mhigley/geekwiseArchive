@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editorial</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    #util  {
+        cursor: pointer;
+    }
+    #util .color {
+        position: relative;
+        top: -110%;
+        transition: top 150ms ease-out;
+    }
+    #util .color.show {
+        top: 0;
+    }
+
+    #util {
+        position: absolute;
+        top: $rhythm;
+        left: calc(100% + #{$rhythm});
+    }
+    </style>
+</head>
+<body class="theme-blue">
+
+    <main>
+        <aside>
+            <ul id="util">
+                <li id="nav"><button><i class="fa fa-bars"></i></button></li>
+                <li id="red" class="color"><button><i class="fa fa-circle circle-red"></i></button></li>
+                <li id="green" class="color"><button><i class="fa fa-circle circle-green"></i></button></li>
+                <li id="blue" class="color"><button><i class="fa fa-circle circle-blue"></i></button></li>
+            </ul>
+            <nav>
+                <form>
+                    <input type="text" placeholder="Search">
+                </form>
+                <div>
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Generic</a></li>
+                        <li><a href="#">Elements</a></li>
+                        <li><a href="#">Submenu</a></li>
+                        <li><a href="#">Etiam Dolore</a></li>
+                        <li><a href="#">Adipscing</a></li>
+                        <li><a href="#">Another Submenu</a></li>
+                        <li><a href="#">Maximus Mauris</a></li>
+                        <li><a href="#">Sapien Mauris</a></li>
+                        <li><a href="#">Amet Lacinia</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div>
+                <section>
+                </section>
+                <footer>
+                    <h3>Get in touch</h3>
+                    <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                        <li><a href="#"><i class="fa fa-home"></i></a></li>
+                    </ul>
+                    <small>&copy; Untitled. No rights reserved.</small>
+                </footer>
+            </div>
+        </aside>
+        <div id="section-wrap">
+            <header>
+                <h1><a href="#"><span>Editorial</span> by Pixelarity</a></h1>
+                <ul>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-medium"></i></a></li>
+                </ul>
+            </header>
+            <section>
+                <img src="img/pic10.jpg" alt="Tattoos and Notebooks">
+                <div>
+                    <h2>Hi, I'm Editorial by Pixelarity</h2>
+                    <p>A urna sed morbi natoque enim cubilia</p>
+                    <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        var $util = document.querySelector('#util'),
+            $nav = document.querySelector('#nav'),
+            $colors = document.querySelectorAll('.color');
+
+        $util.addEventListener('mouseover', function(){
+            for(var i = 0; i < $colors.length; i++){
+                $colors[i].classList.add('show');
+            }
+        });
+        $util.addEventListener('mouseout', function(){
+            for(var i = 0; i < $colors.length; i++){
+                $colors[i].classList.remove('show');
+            }
+        });
+    </script>
+
+</body>
+</html>

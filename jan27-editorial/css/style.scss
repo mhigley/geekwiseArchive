@@ -1,0 +1,223 @@
+@import 'imports';
+
+body {
+    margin: 0;
+    color: $text-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: $rhythm;
+    line-height: $rlh;
+}
+main {
+    display: flex;
+}
+aside.hide-aside {
+    margin-left: calc(-#{$rhythm} * 20);
+}
+@mixin anim($val){left: -$val+%;transition-duration: $val+ms;}
+aside {
+    button  {cursor: pointer;}
+    #util .color {position: relative;transition-property: left;transition-timing-function: cubic-bezier(0, 1.4, 1, 1);}
+    #util li:nth-child(2).color {@include anim(150);}
+    #util li:nth-child(3).color {@include anim(300);}
+    #util li:nth-child(4).color {@include anim(450);}
+
+    #util:hover li:nth-child(2).color,
+    #util:hover li:nth-child(3).color,
+    #util:hover li:nth-child(4).color {left: 0%;}
+
+    nav, > div {
+        position: relative;
+        z-index: 1;
+    }
+    transition: margin 250ms ease-out;
+    flex: none;
+    position: relative;
+    width: calc(#{$rhythm} * 20);
+    background-color: $sidebar;
+    form {
+        background-color: $sidebar-search;
+        padding: $rp;
+    }
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: inherit;
+        line-height: inherit;
+        padding: calc(#{$rhythm} / 2);
+        border-radius: $rbr;
+        border: 1px solid $theme-gray;
+    }
+    div {padding: $rp;}
+    nav {
+        background-color: $sidebar;
+    }
+    nav ul {padding-bottom: $rmb;}
+    nav li {
+        border-bottom: 1px solid $theme-gray;
+        font-size: 80%;
+        padding: 16px 0;
+        &:last-child {border: none;}
+    }
+}
+section {
+    padding-bottom: $rmb;
+}
+#section-wrap {
+    flex: 1;
+    padding: calc(#{$rp} * 4);
+}
+#section-wrap div{
+    width: 50%;
+}
+#section-wrap img {
+    width: calc(50% - #{$rp});
+    float: right;
+    border-radius: $rbr;
+    margin-left: $rp;
+}
+section {
+    border-bottom: 2px solid $theme-gray;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, .btn {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $hdr-color;
+}
+h1 {
+    font-size: $h1;
+}
+h2 {
+    font-size: $h2;
+    line-height: 1.25;
+}
+h2 + p, nav li {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3 {
+
+    display: inline-block;
+    padding-bottom: 4px;
+    padding-right: 16px;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+}
+form, ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.fa {
+    // font-size: $rhythm * 2;
+}
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    h1 {display: flex;align-items: center;}
+    h1 a {
+        font-weight: normal;
+        color: $text-color;
+        transition: color 150ms ease-out;
+        &:hover span, &:hover {
+            color: $theme-blue;
+        }
+        span {
+            color: $hdr-color;
+            font-weight: 700;
+            transition: color 150ms ease-out;
+        }
+    }
+    ul {
+        // position: relative;
+    }
+    ul li {
+        display: inline-block;
+        i.fa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $text-color;
+            width: 1em;
+            height: 1em;
+            margin-left: $rp / 4;
+        }
+    }
+}
+
+.theme-red {
+    header h1 a:hover span,
+    header h1 a:hover,
+    .btn, button i.fa {
+        color: $theme-red;
+    }
+    header, h3, .btn {
+        border-color: $theme-red;
+    }
+}.theme-green {
+    header h1 a:hover span,
+    header h1 a:hover,
+    .btn, button i.fa {
+        color: $theme-green;
+    }
+    header, h3, .btn {
+        border-color: $theme-green;
+    }
+}
+.theme-blue {
+    header h1 a:hover span,
+    header h1 a:hover,
+    .btn, button i.fa {
+        color: $theme-blue;
+    }
+    header, h3, .btn {
+        border-color: $theme-blue;
+    }
+}
+
+
+// USER CUSTOMIZATION
+#util {
+    position: absolute;
+    top: $rhythm;
+    left: calc(100% + #{$rhythm});
+}
+button {
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    font-size: calc(#{$rhythm / 2 * 3});
+}
+button i[class*="circle"]{
+    &[class$="red"]{
+        color: $theme-red;
+    }
+    &[class$="green"]{
+        color: $theme-green;
+    }
+    &[class$="blue"]{
+        color: $theme-blue;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #section-wrap div{
+        width: 35%;
+    }
+    #section-wrap img {
+        width: calc(65% - #{$rp});
+    }
+}

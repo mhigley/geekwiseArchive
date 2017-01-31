@@ -1,0 +1,52 @@
+nav {
+    width: 85%;
+    background-color: hsla(0, 0%, 0%, .85);
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: hsla(0, 0%, 0%, 1);
+}
+nav ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+}
+nav a {
+    display: flex;
+    width: 85px;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 90%, 1);
+    border: 1px solid hsla(0, 0%, 60%, 1);
+    /*background-image: radial-gradient(10deg, red, blue);*/
+    /*background-image: radial-gradient(50% , #000000 0%, #000000 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);*/
+    border-radius: 100%;
+}
+nav li:last-child {
+    margin-left: auto;
+}
+#html5 {
+    background-image: url(../img/html5.svg);
+    background-size: auto 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#css3 {
+    background-image: url(../img/css3.svg);
+    background-size: auto 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#js {
+    background-image: url(../img/js.svg);
+    background-size: auto 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#trash {
+    background-image: url(../img/trash.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
