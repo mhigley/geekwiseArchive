@@ -21,42 +21,7 @@ ul {
     list-style: none;
 }
 
-nav {
-    width: 100%;
-    padding: 25px 4% 0;
-    box-sizing: border-box;
 
-    position: absolute;
-    bottom: 0;
-    transition: transform 250ms ease-in-out;
-    transform: translateY(  calc(100% - 25px) );
-}
-nav:hover {
-    transform: translateY(0%);
-}
-nav ul {
-    background-color: hsla(0, 0%, 0%, .65);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    padding: 16px 16px 24px;
-    display: flex;
-}
-nav a {
-    display: flex;
-    width: 85px;
-    height: 85px;
-    align-items: center;
-    justify-content: center;
-}
-nav a img {
-    height: 100%;
-}
-nav li {
-    margin: 0 10px;
-}
-nav li:last-child {
-    margin-left: auto;
-}
 #html5 {
     background-image: url(../img/html5.svg);
     background-size: auto 70%;
@@ -88,31 +53,31 @@ main {
 }
 
 
-header {
+header#header {
     font-size: 1rem;
     background-color: hsla(0, 0%, 0%, .85);
     color: white;
     padding: 0 16px;
 }
-header h1 {
+header#header h1 {
     font-size: inherit;
     margin: 0;
 }
-header ul {
+header#header ul {
     display: flex;
 }
-header li {
+header#header li {
     display: flex;
 }
-header li:first-child {
+header#header li:first-child {
     font-weight: 100;
 }
-header a {
+header#header a {
     padding: 4px 8px;
     text-decoration: none;
     color: inherit;
 }
-header a:hover {
+header#header a:hover {
     background-color: hsl(210, 81%, 61%);
 }
 
@@ -126,10 +91,128 @@ figure {
     text-shadow: 0 4px 5px hsla(0, 0%, 0%, .75);
     margin-bottom: 2rem;
 }
+main li {
+    position: relative;
+}
 main img {
     width: 65px;
     margin-bottom: 8px;
 }
 main a {
     text-decoration: none;
+}
+
+
+/*
+    FINDER STYLES
+    ---------------------------------------------
+*/
+section.finder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 70.6%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+section.finder header {
+    padding: 5px;
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 94.1%), hsl(180, 1.3%, 84.5%));
+}
+section.finder header div {
+    display: flex;
+}
+section.finder header div:first-child span {
+    margin: 0 auto;
+}
+section.finder header div:last-child {
+    justify-content: space-between;
+}
+section.finder header div:last-child button {
+    line-height: 2;
+    margin: 0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: hsl(300, 7.7%, 97.5%);
+    border: 1px solid hsl(0, 0%, 79.2%);
+}
+section.finder header div:last-child button {
+    background-color: green;
+}
+section.finder header div:last-child span button {
+    float: left;
+}
+section.finder .finder-window-ctrl {
+    display: flex;
+}
+section.finder .finder-window-ctrl li {
+    margin-right: 4px;
+}
+section.finder .finder-window-ctrl i {
+    font-size: 80%;
+    margin: 0 1px;
+}
+section.finder .close {
+    border-color: hsl(0.7, 72.2%, 56.3%);
+    color: hsl(1.5, 96.4%, 67.5%);
+    text-shadow: 1px 1px 0 hsl(0.7, 72.2%, 56.3%), -1px -1px 0 hsl(0.7, 72.2%, 56.3%), 1px -1px 0 hsl(0.7, 72.2%, 56.3%), -1px 1px 0 hsl(0.7, 72.2%, 56.3%);
+}
+section.finder .minimize {
+    border-color: hsl(38.3, 74.3%, 51.2%);
+    color: hsl(40.2, 97.9%, 62.4%);
+    text-shadow: 1px 1px 0 hsl(38.3, 74.3%, 51.2%), -1px -1px 0 hsl(38.3, 74.3%, 51.2%), 1px -1px 0 hsl(38.3, 74.3%, 51.2%), -1px 1px 0 hsl(38.3, 74.3%, 51.2%);
+}
+section.finder .maximize {
+    border-color: hsl(128.1, 73.8%, 37.5%);
+    color: hsl(128.6, 58.6%, 49.2%);
+    text-shadow: 1px 1px 0 hsl(128.1, 73.8%, 37.5%), -1px -1px 0 hsl(128.1, 73.8%, 37.5%), 1px -1px 0 hsl(128.1, 73.8%, 37.5%), -1px 1px 0 hsl(128.1, 73.8%, 37.5%);
+}
+
+
+
+
+
+
+
+/*
+    FOOTER STYLES
+    ---------------------------------------------
+*/
+footer {
+    width: 100%;
+    padding: 25px 4% 0;
+    box-sizing: border-box;
+
+    position: absolute;
+    bottom: 0;
+    transition: transform 250ms ease-in-out;
+    transform: translateY(  calc(100% - 25px) );
+}
+footer:hover {
+    transform: translateY(0%);
+}
+footer ul {
+    background-color: hsla(0, 0%, 0%, .65);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 16px 16px 24px;
+    display: flex;
+}
+footer a {
+    display: flex;
+    width: 85px;
+    height: 85px;
+    align-items: center;
+    justify-content: center;
+}
+footer a img {
+    height: 100%;
+}
+footer li {
+    margin: 0 10px;
+}
+footer li:last-child {
+    margin-left: auto;
 }
