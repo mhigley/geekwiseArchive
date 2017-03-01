@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feb23 JS Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <form id="loginForm">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="log in">
+        </form>
+    </nav>
+    <main>
+        <p><span class="custom"></span> Feel free to reach out to me.</p>
+        <form id="contactForm">
+            <label>
+                <span>First</span>
+                <input type="text" placeholder="First Name" disabled>
+            </label>
+            <label>
+                <span>Last</span>
+                <input type="text" placeholder="Last Name" disabled>
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" placeholder="Email" disabled>
+            </label>
+            <label>
+                <span>Message</span>
+                <textarea cols="30" rows="10" placeholder="Write your message" disabled></textarea>
+            </label>
+            <label class="chk">
+                <span></span>
+                <span><input type="checkbox" checked disabled>
+                Sign up for my newsletter</span>
+            </label>
+            <div>
+                <span></span>
+                <span><input type="submit" value="submit" disabled></span>
+            </div>
+        </form>
+    </main>
+    <script src="js/md5.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

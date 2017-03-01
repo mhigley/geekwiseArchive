@@ -1,0 +1,86 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.25;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p {
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+}
+a {
+    color: hsl(0, 0%, 95%);
+    text-decoration: none;
+}
+
+/* Page Styles*/
+nav {
+    background-color: hsl(0, 0%, 18%);
+    padding: 25px 5%;
+    display: flex;
+}
+main {
+    padding: 50px 5%;
+}
+
+/* Login Form Styles */
+form#loginForm {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+form#loginForm input {
+    max-width: 100px;
+    margin-left: 5px;
+}
+
+/* Contact Form Styles */
+form#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+div {
+    display: inherit;
+    align-items: center;
+    margin-bottom: 10px;
+}
+label span {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+label input,
+label textarea {
+    flex: 4;
+}
+input,
+textarea {
+    padding: 5px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+label.chk span:first-child,
+div span:first-child {
+    flex: 1;
+    padding: 0;
+}
+label.chk span:last-child,
+div span:last-child {
+    padding: 0;
+    flex: 4;
+    text-align: left;
+}
