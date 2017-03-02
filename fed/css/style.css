@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.3;
+}
+main {
+    padding: 64px 4vw;
+}
+
+figure.figure-left {float: left;}
+figure.figure-right {float: right;}
+figure[class$="left"], figure[class$="right"] {width: 50%; flex-direction: column;}
+figure[class$="left"] {margin: 0 32px 32px 0;}
+figure[class$="right"] {margin: 0 0 32px 32px;}
+figure[class^="figure-"]{
+    display: flex;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4;
+    padding: 16px;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzE2JyB2aWV3Qm94PScwIDAgNSAxMCc+Cgk8cmVjdCB3aWR0aD0nMTEwJScgeD0nLTUlJyB5PSctNSUnIGhlaWdodD0nMTEwJScgZmlsbD0nI2ZmZicvPgoJPGxpbmUgeDE9Jy0yJyB5MT0nMScgeDI9JzcnIHkyPScxMCcgc3Ryb2tlPScjZGRkJyBzdHJva2Utd2lkdGg9Jy40Jy8+Cgk8bGluZSB4MT0nLTInIHkxPSc2JyB4Mj0nNycgeTI9JzE1JyBzdHJva2U9JyNkZGQnIHN0cm9rZS13aWR0aD0nLjQnLz4KCTxsaW5lIHgxPSctMicgeTE9Jy00JyB4Mj0nNycgeTI9JzUnIHN0cm9rZT0nI2RkZCcgc3Ryb2tlLXdpZHRoPScuNCcvPgo8L3N2Zz4=);
+}
+
+figure[class^="figure-"] img{
+    width: 100%;
+    box-shadow: 1px 1px 0 #ddd, -1px 1px 0 #ddd, -1px -1px 0 #ddd, 1px -1px 0 #ddd;
+}
+figure[class^="figure-"] figcaption{
+    background-color: white;
+    padding: 8px;
+    font-size: 80%;
+}
+figure[class$="hero"] {
+    margin: 32px 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+}
+figure[class$="hero"] img {
+    margin: 0;
+}
+figure[class$="hero"] figcaption {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+@media screen and (max-width: 500px){
+    figure[class$="left"], figure[class$="right"] {float: none; margin: 32px 0; width: 100%; box-sizing: border-box;}
+}
+@media screen and (min-width: 500px){
+    figure[class$="hero"] figcaption {
+        background-color: transparent;
+        width: calc(100% - 32px);
+        background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, .5));
+        color: white;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(-16px);
+        padding: 32px 16px;
+    }
+}

@@ -6,22 +6,28 @@
     // var form = document.createElement('form');
     // content.appendChild(form);
 
-    var msg = 'How many inputs?';
-    var userInputs = parseInt(prompt(msg));
-
-    /*
-    var getStart = function(){
-        if(Number.isNaN(userInputs) || userInputs <= 0){
-            msg = 'Please enter a number. How many inputs?';
-            userInputs = parseInt(prompt(msg));
-            getStart();
+    var userNum = '';
+    var getNum = function(){
+        // arguments[0]
+        // parseInt()
+        // Is it a number? Is it NOT a number?
+        if(!isNaN(parseInt(arguments[0])) && arguments[0] > 0){
+            console.log('you chose wisely');
+            userLoop(parseInt(arguments[0]));
         }else{
-            console.log(userInputs);
-            console.log('its a number');
+            console.log('you chose poorly');
+            getUserNum();
         }
     };
-    */
 
-    getStart();
+    function userLoop(num){
+        console.log(num);
+    }
+
+    function getUserNum(){
+        userNum = prompt('pick a number');
+        getNum(userNum);
+    }
+    getUserNum();
 
 }());
