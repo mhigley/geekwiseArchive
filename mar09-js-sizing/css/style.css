@@ -1,0 +1,74 @@
+#meter {
+    background-color: white;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    box-shadow: 4px 4px 8px hsla(0, 0%, 0%, .5);
+    padding: 10px;
+    z-index: 9999;
+}
+#meter ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.4;
+}
+h1, h2, h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+header {
+    height: 45vw;
+    /*background-image: url('http://unsplash.it/1000/400?image=450');*/
+    background-image: url('http://placekitten.com/1000/400');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section {
+    padding: 15vw 10vw;
+}
+section.colorIn {
+    transition: background-color 2000ms ease-out;
+}
+
+section:nth-child(1).colorIn{
+    background-color: hsl(100, 30%, 70%);
+}
+section:nth-child(2).colorIn{
+    background-color: hsl(200, 30%, 70%);
+}
+section:nth-child(3).colorIn{
+    background-color: hsl(300, 30%, 70%);
+}
+section img {
+    float: left;
+    width:35%;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px hsla(0, 0%, 0%, .5);
+
+    position: relative;
+    left: -100%;
+    transition: left 1000ms ease-out;
+}
+section.visible img {
+    left: 0%;
+}
+section:nth-child(2) img{
+    float: right;
+    margin-right: 0;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+footer {
+    padding: 25px 10vw;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 60%);
+}
