@@ -1,0 +1,51 @@
+{
+    "pages": [
+        {
+            "page": "Home Page",
+            "url": "#index",
+            "hdr_img": "background.jpg",
+            "tag": "A page to end all pages",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium tortor in massa efficitur condimentum. Donec accumsan, libero non tincidunt consequat, ex lorem hendrerit libero, vel tincidunt odio libero id felis. Ut blandit iaculis ultrices. Praesent maximus a turpis at ultrices. Praesent rutrum vel ipsum a tincidunt. Pellentesque eu neque varius, volutpat turpis eget, pharetra neque. Donec egestas, est quis lacinia egestas, nisi augue euismod sapien, a efficitur lorem ipsum non massa. Fusce elementum sollicitudin ipsum, sed lacinia est cursus sed. Aenean quis gravida nisl. Curabitur sed purus et elit tempus tristique. Cras libero elit, venenatis sit amet fermentum in, luctus eget ligula. Maecenas eros orci, lacinia in gravida quis, fermentum at augue. Sed euismod ultricies feugiat. Sed rhoncus dictum orci at vulputate. "
+        },
+        {
+            "page": "About Page",
+            "url": "#about",
+            "hdr_img": "boardroom.jpg",
+            "tag": "The page that speaks volumes about me",
+            "content": "Morbi vestibulum arcu dignissim leo condimentum commodo. Nunc accumsan risus mauris, at dapibus erat porta vitae. Cras convallis ultricies efficitur. Praesent et elit non tortor consectetur commodo in at enim. Mauris finibus est sed pharetra pretium. Nulla fringilla, felis in bibendum scelerisque, quam lorem sagittis est, a semper leo justo id ex. Morbi diam justo, lobortis eu lobortis quis, condimentum sed elit. Fusce malesuada mauris non nulla dapibus laoreet. Nunc eget pellentesque elit. Curabitur tincidunt blandit varius."
+        },
+        {
+            "page": "Products Page",
+            "url": "#products",
+            "tag": "Lots of stuff and things",
+            "content": "This is my products page... it has lots of stuff and things on it. Please spend your money.",
+            "products": [
+                {
+                    "product": "hat",
+                    "img": "hat.jpg",
+                    "cost": "19.99",
+                    "description": "A ballcap emblazened with the logo in a deep forest green. It will accentuate any outfit that you piece it with."
+                },
+                {
+                    "product": "poster",
+                    "img": "poster.jpg",
+                    "cost": "9.99",
+                    "description": "The original poster. A poster better than any other movie poster before and yet to come."
+                },
+                {
+                    "product": "dvd",
+                    "img": "dvd.jpg",
+                    "cost": "16.99",
+                    "description": "A Universal special edition copy of the original movie. The movie on the disc is exactly the same as the one you already purchased more that two decades ago. But the cover is different. Buy it now."
+                }
+            ]
+        },
+        {
+            "page": "Contact Page",
+            "url": "#contact",
+            "hdr_img": "contact.jpg",
+            "tag": "It there's one way to find me, this would be it",
+            "content": "Cras eget massa libero. Suspendisse potenti. Nulla ut posuere erat. Nullam porttitor fringilla suscipit. Curabitur euismod, tortor sed placerat ornare, odio tortor blandit metus, vel finibus nisi urna eget neque. Proin dignissim volutpat sapien quis ornare. Pellentesque suscipit leo eu urna malesuada placerat. Donec placerat venenatis magna, et facilisis risus fringilla a. Integer finibus magna risus, laoreet pretium lacus gravida feugiat."
+        }
+    ]
+}
