@@ -1,0 +1,8 @@
+1. You'll need a webpage with a basic level of styling.
+2. Create a fixed position box to a corner of the screen
+3. Output to the box: (listener: "resize")
+    - Window width
+    - Window height
+4. The box will also contain a form with (min) three inputs.
+    Upon "submit", the values that are entered, will change the style of
+    the webpage. 

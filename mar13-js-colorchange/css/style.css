@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+header {
+    height: 500px;
+    background-color: hsl(271, 72%, 47%);
+    background-image: url(../img/jeep-colorchange.png);
+    background-position: center;
+    background-size: cover;
+    /*transform: rotate( deg);*/
+    transition: all 500ms ease-out;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+nav > ul {
+    display: flex;
+    background-color: lightgrey;
+}
+nav > ul > li {
+    position: relative;
+    transition: all 250ms ease-out;
+}
+nav > ul > li.hovering {
+    background-color: pink;
+}
+nav a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: inherit;
+}
+nav > ul > li > a {
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    transition: all 250ms ease-out;
+    background-color: lightgrey;
+}
+nav > ul > li.hovering ul {
+    top: 100%;
+}
+nav > ul > li.hovering a {
+    background-color: pink;
+}
+nav > ul > li ul {
+    position: absolute;
+    top: -1000%;
+    transition: all 250ms ease-out;
+}
+nav ul ul {
+    width: 200%;
+    background-color: lightgrey;
+}
