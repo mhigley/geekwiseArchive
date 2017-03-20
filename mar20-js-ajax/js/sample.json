@@ -5,7 +5,12 @@
             "url": "#index",
             "hdr_img": "background.jpg",
             "tag": "A page to end all pages",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium tortor in massa efficitur condimentum. Donec accumsan, libero non tincidunt consequat, ex lorem hendrerit libero, vel tincidunt odio libero id felis. Ut blandit iaculis ultrices. Praesent maximus a turpis at ultrices. Praesent rutrum vel ipsum a tincidunt. Pellentesque eu neque varius, volutpat turpis eget, pharetra neque. Donec egestas, est quis lacinia egestas, nisi augue euismod sapien, a efficitur lorem ipsum non massa. Fusce elementum sollicitudin ipsum, sed lacinia est cursus sed. Aenean quis gravida nisl. Curabitur sed purus et elit tempus tristique. Cras libero elit, venenatis sit amet fermentum in, luctus eget ligula. Maecenas eros orci, lacinia in gravida quis, fermentum at augue. Sed euismod ultricies feugiat. Sed rhoncus dictum orci at vulputate. "
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Pellentesque eu neque varius, volutpat turpis eget, pharetra neque. Donec egestas, est quis lacinia egestas, nisi augue euismod sapien, a efficitur lorem ipsum non massa. Fusce elementum sollicitudin ipsum, sed lacinia est cursus sed. Aenean quis gravida nisl. Curabitur sed purus et elit tempus tristique. Cras libero elit, venenatis sit amet fermentum in, luctus eget ligula. Maecenas eros orci, lacinia in gravida quis, fermentum at augue. Sed euismod ultricies feugiat. Sed rhoncus dictum orci at vulputate."
+        },
+        {
+            "page": "Bio Page",
+            "url": "#bio",
+            "content": "This is the page with the bios"
         },
         {
             "page": "About Page",

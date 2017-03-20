@@ -1,0 +1,191 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: .75px;
+    color: hsl(0, 0%, 60%);
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.btn {
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    padding: 8px 16px;
+}
+.wrapper {
+    padding: 0 64px;
+}
+
+
+
+
+
+
+/**
+*  Navigation Styles ---------------------------------------------------------------
+**/
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, .85);
+    padding: 0 64px;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+nav h1 a {
+    display: inline-block;
+    background-image: url(../img/netflix.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 24px;
+    margin-left: 0;
+    color: transparent;
+    /*text-indent: -200%;*/
+    /*overflow: hidden;*/
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav a {
+    text-decoration: none !important;
+}
+nav a,
+nav form {
+    margin: 0 16px;
+}
+nav ul:first-of-type {
+    margin-right: auto;
+}
+nav ul:last-child li:last-child a {
+    margin-right: 0;
+}
+nav a.active {
+    color: hsl(357, 92.4%, 46.7%);
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main li {
+    margin: 16px;
+}
+
+
+
+/**
+*  Navigation Styles ---------------------------------------------------------------
+**/
+form {
+    position: relative;
+}
+form label {
+    display: flex;
+    align-items: center;
+}
+form label > span {
+    position: relative;
+    transform: translateX(0%);
+    transition: transform 250ms ease-out
+}
+form.searchOpen label > span {
+    transform: translateX(100%);
+}
+form input[type="search"] {
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    width: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    line-height: 2;
+    font-size: inherit;
+    background-color: transparent;
+    transition: width 250ms ease-out, border-color 250ms ease-out;
+}
+form.searchOpen input[type="search"]{
+    width: 175px;
+    padding: 0 4px;
+    border-color: lightgrey;
+    background-color: white;
+}
+
+
+/**
+*  Featured Styles ---------------------------------------------------------------
+**/
+header.featured {
+    background-image: linear-gradient(to top, hsl(0, 0%, 3%), hsl(0, 0%, 8%));
+    background-position: center;
+    background-size: cover;
+}
+
+div.featured {
+    padding: 150px 0;
+    font-size: 24px;
+    width: 50%;
+    color: hsl(0, 0%, 100%);
+}
+div.featured h2 {
+    margin-bottom: 24px;
+}
+div.featured .poster {
+    max-width: 100%;
+}
+
+
+
+
+
+
+/**
+*  Footer Styles ---------------------------------------------------------------
+**/
+footer {
+    font-size: 13px;
+    font-weight: 100;
+    padding-top: 150px;
+}
+footer .wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+footer .footer-social ul {
+    font-size: 32px;
+    display: flex;
+}
+footer .footer-social li {
+    margin-right: 28px;
+}
+footer .footer-links {
+    line-height: 2.8;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-copy {
+    font-size: 11px;
+}
