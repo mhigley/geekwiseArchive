@@ -18,6 +18,7 @@ req.onload = function(){
 req.send(null);
 */
 
+/*
 const URL_ROOT = 'https://api.github.com/';
 var emojis = 'emojis';
 var emojiObj = {};
@@ -57,7 +58,7 @@ function getRequest(callback){
 
     getRequest(createPage);
 }());
-
+*/
 
 
 

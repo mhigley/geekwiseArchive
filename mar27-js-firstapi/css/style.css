@@ -1,0 +1,9 @@
+section ul {
+    display: flex;
+}
+section ul li {
+    width: calc(100% / 3);
+}
+section img {
+    width: 100%;
+}

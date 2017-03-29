@@ -1,0 +1,84 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+h1, h2, h3 {
+    font-family: inherit;
+    font-weight: 400;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 8%);
+    padding: 8px 16px;
+}
+main {
+    padding: 64px 0;
+}
+#userArr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#userArr li {
+    width: 200px;
+    margin: 16px;
+    padding: 16px 16px 13px 16px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 8px;
+    background-image: linear-gradient(to top, hsl(0, 0%, 95%), hsl(0, 0%, 98%));
+}
+#userArr img {
+    width: 100%;
+    border-radius: 4px;
+}
+#overlay {
+    position: fixed;
+    z-index: 8888;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#overlay section {
+    width: 65%;
+    max-width: 450px;
+    padding: 36px 24px 16px 24px;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+
+}
+#overlay button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    color: hsl(0, 0%, 75%);
+    cursor: pointer;
+}
+#overlay img {
+    width: 100%;
+    border-radius: 4px;
+}

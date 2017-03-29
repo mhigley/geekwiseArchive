@@ -1,0 +1,21 @@
+- No credentials needed:
+
+* Udacity
+udacity.com/catalog-api
+
+* Natural History Museum
+data.nhm.ac.uk/about/download
+
+* Data.gov
+catalog.data.gov
+
+---
+
+
+- Simple signups
+
+* UBC Open Collections
+open.library.ubc.ca/research
+
+* Open Weather API
+openweathermap.org/api

@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+h1, h2, h3 {
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p {
+    margin: 0 0 8px 0;
+}
+#searchUsers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#searchUsers li {
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 8px;
+    background-image: linear-gradient(to top, hsl(0, 0%, 93%), hsl(0, 0%, 98%));
+    padding: 16px;
+    margin: 16px;
+    max-width: 250px;
+}
+#searchUsers h1 {
+    font-size: 1.5em;
+}
+#searchUsers img {
+    width: 100%;
+    float: left;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
