@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+main section {
+
+}
+section ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section li {
+    width: 250px;
+    margin: 25px 2px;
+    transition: transform 250ms ease-out;
+    position: relative;
+}
+section li:hover {
+    transform: scale(1.25);
+}
+section li:hover div {
+    opacity: 1;
+}
+section li img {
+    width: 100%;
+    float: left;
+}
+section div {
+    transition: all 250ms ease-out;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    text-shadow: 1px 1px 1px hsla(0, 0%, 0%, .75);
+    color: white;
+}
