@@ -113,15 +113,24 @@ function envVars(){
 }
 
 function pageSetup(){
-    var search = document.querySelector('form input[type="search"]'),
-        searchBtn = document.querySelector('form input[type="submit"]');
+    var searchForm = document.querySelector('form'),
+        search = document.querySelector('form input[type="search"]'),
+        searchSubmit = document.querySelector('form input[type="submit"]'),
+        searchBtn = document.querySelector('form button');
+
+    searchForm.addEventListener('submit', function(evt){
+        evt.preventDefault();
+        var userSearch = search.value;
+        search.value = '';
+        searchForm.className = '';
+
+        var url = myVars.get_root_url()+'search/movie?api_key='+myVars.get_api_key()+'&language=en-US&page=1&query='+userSearch;
+        getReq(url, getMovies);
+    });
 
     searchBtn.addEventListener('click', function(evt){
         evt.preventDefault();
-        var userSearch = search.value;
-
-        var url = myVars.get_root_url()+'search/movie?api_key='+myVars.get_api_key()+'&language=en-US&page=1&query='+userSearch;
-
-        getReq(url, getMovies);
+        searchForm.className = 'search';
     });
+
 }

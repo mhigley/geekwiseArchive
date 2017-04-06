@@ -3,6 +3,15 @@
 body {
     font-family: sans-serif;
     font-weight: 100;
+    margin: 0;
+    padding-top: 85px;
+    background-color: hsl(0, 0%, 8%);
+}
+h1 {
+    margin: 0;
+}
+main {
+    padding: 0 32px;
 }
 main section {
 
@@ -16,7 +25,7 @@ section ul {
     justify-content: center;
 }
 section li {
-    width: 250px;
+    width: 175px;
     margin: 25px 2px;
     transition: transform 250ms ease-out;
     position: relative;
@@ -49,3 +58,89 @@ section ul.rating li {
     margin: 0;
 
 }
+
+
+
+
+header nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: hsla(0, 0%, 0%, .9);
+    padding: 8px 32px;
+    color: white;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul h1 a {
+    display: inline-block;
+    background-image: url(../img/netflix-logo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -1000%;
+}
+header nav > ul > li {margin: 0 10px;}
+header nav > ul:first-child li:first-child {margin-left: 0;}
+header nav > ul:last-child li:last-child {margin-right: 0;}
+header nav > ul:last-child > li {font-size: 24px;}
+header nav ul:last-child > li img {
+    width: 36px;
+    float: left;
+}
+header nav ul:first-child li.browse {
+    color: hsl(357.3, 72.8%, 41.8%);
+    font-weight: 600;
+}
+header nav form input {
+    border: 1px solid white;
+    background-color: black;
+    height: 34px;
+    padding: 4px 0px;
+    width: 0px;
+    color: white;
+    font-size: 12px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: width 250ms ease-out, padding 250ms ease-out;
+}
+header nav form {
+    margin-left: auto;
+    position: relative;
+}
+header nav form.search input {
+    padding: 4px 8px;
+    width: 250px;
+    opacity: 1;
+}
+header nav form.search button {
+    display: none;
+}
+header nav form button {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+header nav form input::-webkit-input-placeholder {color: hsla(0, 0%, 90%);}
+header nav form input::-moz-placeholder {color: hsla(0, 0%, 90%);}
+header nav form input:-ms-input-placeholder {color: hsla(0, 0%, 90%);}
+header nav form input:-moz-placeholder {color: hsla(0, 0%, 90%);}
