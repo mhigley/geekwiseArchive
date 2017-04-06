@@ -4,18 +4,72 @@ body {
     font-family: sans-serif;
     font-weight: 100;
     margin: 0;
-    padding-top: 85px;
     background-color: hsl(0, 0%, 8%);
 }
 h1 {
     margin: 0;
 }
 main {
-    padding: 0 32px;
+    padding: 64px 32px;
 }
 main section {
-
+    color: white;
 }
+main section h1 {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#featured {
+    background-image: linear-gradient(to right, hsla(0, 0%, 0%, .35) 25%, hsla(0, 0%, 0%, 0)), url(../img/nav-shadow.png), url(http://unsplash.it/1200/600);
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center, top center;
+    padding: 100px 32px;
+}
+#featured div {
+    width: 33%;
+    font-size: 12px;
+    line-height: 1.35;
+    color: white;
+}
+#featured img {
+    width: 125px;
+}
+#featured .title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+#featured .release {
+    font-weight: bold;
+}
+#featured p {
+    margin-top: 0;
+}
+#featured .summary,
+#featured .starring span:first-child,
+#featured .director span:first-child {
+    color: hsl(0, 0%, 75%);
+}
+#featured .starring,
+#featured .director {
+    margin-bottom: 0;
+}
+#featured a {
+    background-color: hsl(357.3, 72.8%, 41.8%);
+    color: white;
+    display: inline-block;
+    padding: 8px 16px 4px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+
+
 section ul {
     padding: 0;
     margin: 0;

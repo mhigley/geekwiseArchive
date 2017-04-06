@@ -7,7 +7,6 @@ function getReq(url, cb){
     req.open('GET', url);
     req.onload = function(){
         if(req.readyState === 4 && req.status === 200){
-            console.log(JSON.parse(req.responseText));
             cb(JSON.parse(req.responseText));
         }else{
             console.log('error', req.statusText);
@@ -79,6 +78,14 @@ function getMovies(movies){
         ul.appendChild(li);
     });
 
+    var randMovie = [957, 85, 238, 3034, 562];
+    var getRandMovie = Math.floor(Math.random() * randMovie.length);
+
+    console.log(getRandMovie);
+    console.log(randMovie[getRandMovie]);
+    var url = myVars.get_root_url()+'movie/'+randMovie[getRandMovie]+'?api_key='+myVars.get_api_key();
+    getReq(url, featureSetup);
+
     pageSetup();
 }
 
@@ -110,6 +117,18 @@ function envVars(){
             return access_token;
         }
     }
+}
+function featureSetup(movie){
+    var featured = document.querySelector('#featured'),
+        title = document.querySelector('#featured .title'),
+        summary = document.querySelector('#featured .summary'),
+        starring = document.querySelector('#featured .starring'),
+        director = document.querySelector('#featured .director');
+
+    console.log(movie);
+    featured.style.backgroundImage = 'linear-gradient(to right, hsla(0, 0%, 0%, .8) 25%, hsla(0, 0%, 0%, 0) 50%), url(../img/nav-shadow.png), url(https://image.tmdb.org/t/p/original'+movie.backdrop_path+')';
+    title.textContent = movie.original_title;
+    summary.textContent = movie.overview;
 }
 
 function pageSetup(){
